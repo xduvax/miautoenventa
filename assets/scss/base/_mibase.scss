@@ -1,0 +1,48 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1{
+    font-size: var(--h1-font-size);
+}
+
+p{
+    font-size: var(--p-font-size);
+}
+
+@font-face{
+	font-family: "cuerpo";
+	src: url(../fuentes/avenir_ff/AvenirLTStd-Roman.otf);
+}
+@font-face{
+	font-family: "encabezado";
+	src: url(../fuentes/worldsatwar/WorldsAtWarBB.otf);
+}

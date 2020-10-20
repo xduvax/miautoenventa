@@ -1,0 +1,84 @@
+.main-banner{
+    @include background-banner;
+    @include div-transparente;
+
+    position: relative;
+    padding: 2rem 1rem;
+    color: #FFF;
+    text-align: center;
+
+    @include from(medium){
+        padding: 4rem 1rem;
+    }
+
+    h1, p, img, a{
+        position: relative;
+    }
+
+    img{
+        width: 3rem;
+        @include from(medium){
+            width: 4rem;
+        }
+    }
+
+    .banner-titulo{
+        animation-name: animacion-titulo;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-delay: 0.8s;
+        animation-iteration-count: 2;
+        animation-direction: normal;
+    }
+
+    @keyframes animacion-titulo {
+        
+        0% {letter-spacing: normal;}
+        50% {letter-spacing: 8px;}
+        100% {letter-spacing: normal;}
+
+    }
+
+    .botones-wrapper{
+
+        @include from(medium){
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            justify-content: space-between;
+        }
+    }
+
+    .botones-wrapper > a{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10rem;
+        padding: 1rem 0;
+        background-color: $color-principal;
+        border: 3px solid #FFF;
+        border-radius: 0.5rem;
+
+        @include from(medium){
+            width: auto;
+            font-size: 2rem;
+            padding: 0.7em 1.3em;
+            transition-property: background-color, border, color;
+            transition-duration: 0.4s;
+        }
+    }
+
+    .botones-wrapper > a:first-child{
+        margin-bottom: 1rem;
+        @include from(medium){
+            margin-bottom: 0;
+        }
+    }
+
+    .botones-wrapper > a:hover{
+        background-color: #FFF;
+        color: $color-principal;
+        border: 3px solid $color-principal;
+    }
+}

@@ -1,0 +1,30 @@
+$max-width: 1200px;
+$header-height: 5rem;
+
+$color-principal: #26376b;
+$color-secundario: #D8D9DD;
+$color-obscuro: #17264F;
+
+$rgb-principal: rgb(38,55,107);
+$rgb-obscuro: rgb(23, 38, 79);
+
+$breakpoints: (
+    medium: 768px
+);
+
+//variables de apilacion
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-encima: 100;
+$z-modal: 1000;
+
+:root{
+    --h1-font-size: 1.6rem;
+    --p-font-size: 0.8rem;
+
+    @media screen and (min-width: 768px) {
+        --h1-font-size: 2rem;
+        --p-font-size: 1rem;
+    }
+}
